@@ -52,6 +52,7 @@ fun AddEditNoteScreen(
                         message = event.message
                     )
                 }
+
                 is AddEditNoteViewModel.UiEvent.SaveNote -> {
                     navController.navigateUp()
                 }

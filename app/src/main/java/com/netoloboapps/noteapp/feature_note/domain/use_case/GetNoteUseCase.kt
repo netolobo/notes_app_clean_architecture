@@ -5,6 +5,5 @@ import com.netoloboapps.noteapp.feature_note.domain.repository.NoteRepository
 class GetNoteUseCase(
     private val repository: NoteRepository
 ) {
-
     suspend operator fun invoke(id: Int) = repository.getNoteById(id)
 }

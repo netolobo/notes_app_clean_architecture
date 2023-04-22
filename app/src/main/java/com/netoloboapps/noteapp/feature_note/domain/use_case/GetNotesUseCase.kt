@@ -21,6 +21,7 @@ class GetNotesUseCase(
                     is NoteOrder.Color -> notes.sortedBy { it.color }
                 }
             }
+
             is OrderType.Descending -> {
                 when (noteOrder) {
                     is NoteOrder.Title -> notes.sortedByDescending { it.title.lowercase() }
