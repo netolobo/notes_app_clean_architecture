@@ -29,7 +29,6 @@ import com.netoloboapps.noteapp.feature_note.presentation.add_edit_note.componen
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AddEditNoteScreen(
     navController: NavController,
